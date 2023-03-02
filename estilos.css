@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.seccion-body{
+  padding: 40px;
+}
+
+/** HEADER */
+nav{
+  width: 100%;
+}
+
+.menu {
+  padding: 10px 0px;
+  background-color: rgba(90, 90, 82, 0.6);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  color: white;
+  position: fixed;
+  text-align: right;
+}
+
+.menu a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.ver-menu, .ocultar-menu {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu a:hover, .ver-menu:hover, .ocultar-menu:hover{
+  background: palevioletred;
+  color: white;
+}
+
+#check{
+  display: none;
+}
+
+/** PERFIL */
+#perfil{
+  background-image: linear-gradient(rgba(30, 89, 111, 0.5), rgba(145, 141, 151, 0.542)),url(imagenes/workspace\ with\ technology.jpg);
+  background-color:rgba(30, 89, 111, 0.545); /** en el caso de que no baje la imagen*/
+  height: 100%;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 20PX;
+}
+
+.contenido-perfil{
+  padding: 10px;
+}
+
+.contenido-perfil img{
+  padding-top: 25px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+}
+
+.contenido-perfil h1 {
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.contenido-perfil h2 {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+/** TÍTULOS DE TODAS LAS SECCIONES Y SUBSECCIONES */
+.fa-solid {
+  color: white;
+  font-size: 28px;
+}
+
+.seccion-body h3 {
+  display: inline;
+  padding-left: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+}
+
+.seccion-body h4 {
+  padding-top: 20px;
+  padding-left: 5px;
+  font-size: 17px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold
+}
+
+/** SECCIÓN "SOBRE MÍ" */
+#sobre-mi {
+  background:#1e5a6f8a;
+}
+
+#sobre-mi p {
+  padding-top: 15px;
+  text-align: justify;
+  color: white;
+  font-weight: bold;
+}
+
+/** SECCIÓN "EXPERIENCIA" */
+#experiencia {
+  background: #1e596fbc;
+}
+
+#experiencia p {
+  padding-left: 5px;
+  text-align: justify;
+}
+
+#experiencia .row {
+  border: solid;
+  border-radius: 15px;
+  background-color: #d2dbd8;
+  box-shadow: 10px 5px rgba(0,0,0,0.5);
+}
+
+#experiencia .col-md-8{
+  padding-top: 20px;
+}
+
+#experiencia ul{
+  list-style-type: circle;
+}
+
+#experiencia .row:hover{
+  transform: scale(1.02);
+}
+
+/** SECCIÓN "EDUCACIÓN" */
+#educacion {
+  background: rgba(30, 89, 111, 0.872);
+}
+
+#educacion h4 {
+  color: black;
+  text-align: center;
+}
+
+.col-md-3 {
+  border-radius: 15px;
+  background: rgb(229, 190, 216);
+  box-shadow: 10px 5px rgba(0,0,0,0.5);
+  margin: 15px;
+}
+
+#educacion p {
+  text-align: center;
+}
+
+.col-md-3:hover{
+  transform: scale(1.1);
+}
+
+/** SECCIÓN "HABILIDADES" */
+#habilidades {
+  background: #1e596f;
+}
+
+.fa-laptop, .fa-users, .fa-language {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+#habilidades h4 {
+  display: inline;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+
+#habilidades p {
+  padding-top: 15px;
+  text-align: right;
+  color: white;
+}
+
+.button-hab {
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 5px 20px;
+  border: none;
+  background-color: rgb(157, 117, 157);
+  color: white;
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button-hab:hover {
+  border: 2px solid white;
+  background-color: rgb(146, 81, 146);
+}
+
+.certificados {
+  padding-top: 30px;
+  text-align: center;
+}
+
+/** SECCIÓN "CONTACTAME" */
+#contacto {
+  width: 100%;
+  background: url(imagenes/home-office\ and\ laptop.png);
+  background-size: cover;
+}
+
+.contenido {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  background-color:rgba(90, 90, 82, 0.5);
+  padding: 20px;
+}
+
+#mensaje-encabezado{
+  padding-bottom: 40px;
+}
+
+.dato-personal {
+  padding-left: 40px;
+}
+
+.fa-location-dot, .fa-envelope, .fa-phone {
+  margin-right: 20px;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 9px;
+}
+
+.fa-location-dot{
+  padding: 11px;
+}
+
+#informacion-personal{
+  padding-bottom: 30px;
+}
+
+#informacion-personal p {
+  color: rgba(253, 236, 241, 0.932);
+  font-family: 'Quicksand', sans-serif;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 16px;
+  display: inline;
+}
+
+/** FORMULARIO - SECCIÓN "CONTACTAME" */
+.formulario {
+  padding-left: 10px;
+}
+
+.formulario input, .formulario textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 20px;
+  background-color: rgba(226, 223, 224, 0.5);
+  border: 1px solid black;
+}
+
+.formulario textarea {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 150px;
+  max-height: 200px;
+  background-color: rgba(226, 223, 224, 0.5);
+}
+
+.formulario input:focus, .formulario textarea:focus {
+  border: 3px solid;
+  background-color: rgb(253, 228, 240);
+}
+
+.formulario button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: rgb(231, 102, 123);
+  color: white;
+  cursor: pointer;
+  float: right;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
+}
+
+.ir-a-inicio i{
+  background-color: rgb(248, 109, 132);
+  color: white;
+  padding: 7px;
+  border-radius: 80%;
+  float: right;
+}
+
+.formulario button:hover, .ir-a-inicio i:hover{
+  border: 2px solid white;
+  background: rgba(231, 102, 124, 0.842);
+  display: block;
+}
+
+/** FOOTER */
+footer { 
+  background-color: rgba(10, 12, 16, 0.968);
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.redes-sociales a {
+  color: white;
+  margin: 8px;
+  font-size: 20px;
+  display: inline;
+}
+
+footer a:hover{
+  color: rgb(254, 90, 180);
+}
+
+/** RESPONSIVE - MEDIA QUERIES */
+@media(max-width: 600px){
+
+  /** Header */
+  .ver-menu, .ocultar-menu{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    background: rgba(90, 90, 82, 0.6);
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    z-index: 100;
+  }
+  .menu a{
+    display: block;
+    padding: 10px;
+  }
+  .ver-menu{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: white;
+    background-color: palevioletred;
+  }
+  .ocultar-menu{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  #check:checked~.menu{
+    right: 0;
+  }
+
+/* sección "Habilidades" */
+  #habilidades h4 {
+    padding-top: 50px;
+  }
+  .fa-laptop, .fa-users, .fa-language {
+    padding-top: 50px;
+  }
+
+/* Sección "Contacto" */
+  .dato-personal {
+    padding-left: 0px;
+  }
+  .fa-location-dot, .fa-envelope, .fa-phone {
+    margin-right: 4px;
+    font-size: 10px;
+    padding: 5px;
+  }
+  .formulario {
+    padding-left: 0px;
+  }
+  #contacto .contenido {
+    grid-template-columns: 2fr;
+} 
+}
+
